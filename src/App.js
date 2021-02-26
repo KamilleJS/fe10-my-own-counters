@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react';
+
+const initialCount = [
+  {value: 5, id: 1}
+]
 
 function App() {
+
+  const [counts, setCounts] = useState(initialCount);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>Counters</h2>
+
+      {counts.map(el => <li key={el.id}>
+        {el.value}
+      </li>)}
     </div>
   );
 }
