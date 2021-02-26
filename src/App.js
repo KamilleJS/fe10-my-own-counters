@@ -2,7 +2,7 @@ import {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 
 const initialCount = [
-    {value: 5, id: 1}
+    {id: 1, value: 5}
 ]
 
 function App() {
@@ -30,11 +30,7 @@ function App() {
     }
 
     const removeCounter = (countId) => {
-        const newCounts = counts.filter(el => {
-            if (el.id !== countId) {
-                return el;
-            }
-        })
+        const newCounts = counts.filter(el => el.id !== countId)
         setCounts(newCounts);
     }
 
