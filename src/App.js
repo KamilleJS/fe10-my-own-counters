@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css'
 import { Button } from 'reactstrap';
 
 const initialCount = [
@@ -18,6 +18,10 @@ function App() {
         <Button color="secondary" size="sm">-1</Button>
         {' '}
         {el.value}
+        {' '}
+        <Button color="secondary" size="sm">+1</Button>
+        {' '}
+        <Button outline color="secondary" size="sm">Remove counter</Button>
       </li>)}
     </div>
   );
