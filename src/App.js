@@ -21,8 +21,10 @@ function App() {
         {' '}
         <Button color="secondary" size="sm">+1</Button>
         {' '}
-        <Button outline color="secondary" size="sm">Remove counter</Button>
+        <Button outline color="primary" size="sm">Remove counter</Button>
       </li>)}
+        <br/>
+      <Button outline color="success" size="sm">Add counter</Button>
     </div>
   );
 }
