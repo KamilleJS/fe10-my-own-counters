@@ -38,7 +38,6 @@ function App() {
         const newCounts = Math.floor(Math.random() * 10);
         setCounts([...counts, {value: newCounts, id: counts.length}]);
     }
-
     return (
         <div>
             <h2>Counters</h2>
